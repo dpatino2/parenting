@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MdTabsModule, 
           MdMenuModule, 
@@ -12,10 +12,18 @@ import { MdTabsModule,
           MdGridListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { User } from './user';
+import { Capability } from './capability';
+import { AchievementDefinition } from './achievement-definition';
+import { Act } from './act';
+import { ActSelectorComponent } from './act-selector/act-selector.component';
+import { CapabilityListComponent } from './capability-list/capability-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ActSelectorComponent,
+    CapabilityListComponent
   ],
   imports: [
     BrowserModule,

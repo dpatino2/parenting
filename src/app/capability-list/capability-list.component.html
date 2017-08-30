@@ -1,0 +1,12 @@
+<div class="container" fxLayout="center">
+  <div fxLayout="row" 
+    fxLayoutGap="25px" 
+    fxLayoutAlign="start space-around" 
+    fxLayoutWrap>
+    
+      <app-act-selector 
+        *ngFor="let capability of capabilities" 
+        [capability]="capability"
+        fxFlex="calc(40% - 25px)"></app-act-selector>
+  </div>
+</div>
