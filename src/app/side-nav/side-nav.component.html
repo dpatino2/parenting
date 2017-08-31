@@ -1,0 +1,17 @@
+
+    <md-sidenav #sidenav mode="side" opened="true" fxFlexFill >
+        <md-list fxLayout="column">
+
+          <span *ngFor="let item of items">
+            <button md-button fxFlex="100">
+              <md-list-item>
+                <md-icon class="material-icons">{{item.icon}}</md-icon>
+                {{item.label}}
+              </md-list-item>
+            </button>
+            <md-divider></md-divider>
+          </span>
+          
+        </md-list>
+    </md-sidenav>
+  

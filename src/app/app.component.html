@@ -8,66 +8,11 @@
 </md-toolbar>
 
 <div fxLayout="column" >
+  <md-sidenav-container fxLayout="row" fxFlexFill>
 
-  <!-- SIDENAV COMPONENT -->
-  <md-sidenav-container fxLayout="row" fxFlex="100">
-    <md-sidenav #sidenav mode="side" opened="true" fxFlex="20" class="mat-elevation-z2">
-        <md-list fxLayout="column">
-          <button md-button fxFlex="100"> <md-list-item> <md-icon class="material-icons">dashboard</md-icon>Status</md-list-item></button>
-          <md-divider></md-divider>          
-          <button md-button fxFlex="100">
-            <md-list-item> <md-icon class="material-icons">add_circle</md-icon> Add achievement</md-list-item>
-          </button>
-          <md-divider></md-divider>          
-          <button md-button fxFlex="100"> 
-            <md-list-item> <md-icon class="material-icons">trending_up</md-icon> Level-up Info</md-list-item>
-          </button>
-          <md-divider></md-divider>          
-          <button md-button fxFlex="100"> 
-            <md-list-item><md-icon class="material-icons">polls</md-icon> Standings</md-list-item>
-          </button>
-          <md-divider></md-divider>          
-          <button md-button fxFlex="100"> 
-            <md-list-item><md-icon class="material-icons">group</md-icon> Parent friends</md-list-item>
-          </button>
-        </md-list>
-    </md-sidenav>
-    <!-- END SIDENAV COMPONENT -->
+    <app-side-nav class="mat-elevation-z2" fxFlex="20"></app-side-nav>
 
     <app-capability-list></app-capability-list>
-
-    <!-- ADD ACHIEVEMENT COMPONENT
-    <md-tab-group fxFlex="67">
-      <md-tab label="Category One">
-        <div class="container" fxLayout="center">
-          <div fxLayout="row" 
-            fxLayoutGap="25px" 
-            fxLayoutAlign="start space-around" 
-            fxLayoutWrap>
-            <md-card *ngFor="let capability of [1, 2, 3, 4, 5]" 
-              class="mat-elevation-z6" 
-              flex="calc(40% - 25px)">
-              <md-card-title>Achievement title</md-card-title>
-              <md-card-subtitle>Category One</md-card-subtitle>
-              <md-card-content>
-                <p>This is the description of the great parenting achievement</p>
-              </md-card-content>  
-
-              <md-card-actions fxLayout="row" fxLayoutAlign="end center">
-                  <button md-button>Add</button>
-               </md-card-actions>
-
-            </md-card>
-          </div>
-        </div>
-      </md-tab>
-      <md-tab label="Category Two">
-        <h1>Some more tab content</h1>
-        <p>...</p>
-      </md-tab>
-    </md-tab-group>
-
-    END ADD ACHIEVEMENT COMPONENT -->
 
   </md-sidenav-container>
 </div>

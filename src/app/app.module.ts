@@ -18,12 +18,14 @@ import { AchievementDefinition } from './achievement-definition';
 import { Act } from './act';
 import { ActSelectorComponent } from './act-selector/act-selector.component';
 import { CapabilityListComponent } from './capability-list/capability-list.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ActSelectorComponent,
-    CapabilityListComponent
+    CapabilityListComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,

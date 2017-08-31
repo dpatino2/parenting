@@ -37,7 +37,7 @@ const CAPABILITIES = [
     title: "Community event",
     tagline: "Time for an outing!",
     icon: "car",
-    description: "Get out ",
+    description: "Get out on the town and mix with the locals",
     category: "Development",
   },
   {
