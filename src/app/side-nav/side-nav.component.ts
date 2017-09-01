@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavComponent implements OnInit {
   items: SideNavItem[];
+  @Input() fullSize: boolean; 
 
   constructor() { this.items = SIDENAVITEMS }
 
